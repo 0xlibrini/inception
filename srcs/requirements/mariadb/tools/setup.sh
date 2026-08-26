@@ -15,4 +15,4 @@ mysql -e "FLUSH PRIVILEGES;"
 
 mysqladmin shutdown
 
-exec mysqld_safe --datadir=/var/lib/mysql
+exec mysqld_safe --datadir=/var/lib/mysql   

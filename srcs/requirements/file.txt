@@ -1,0 +1,8 @@
+ wp core install \
+        --url=anlibrin.42.fr \
+        --title="Inception" \
+        --admin_user=anas \
+        --admin_password=1234anas\
+        --admin_email=anaslibrini@gmial.com\
+        --path=/var/www/html \
+        --allow-root
