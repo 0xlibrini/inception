@@ -1,0 +1,27 @@
+services:
+  mariadb:
+    build: 
+        context: requirements/mariadb
+    container_name: mariadb
+    image: mariadb
+    env_file:
+      - .env
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - inception
+    restart: on-failure
+  wordpress:
+    build:
+        context: requirements/wordpress
+    container_name: wordpress
+    image: wordpress
+    env_file:
+      - .env
+    volumes:
+      - wpdata:/var/www/html
+    network:
+      - inception
+    depends_on:
+        - mariadb
+    restart: on-failure
