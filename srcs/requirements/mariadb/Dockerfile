@@ -10,4 +10,4 @@ RUN chmod +x /scripts/setup.sh
 
 EXPOSE 3306
 
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "/scripts/setup.sh" ]

@@ -18,5 +18,4 @@ WORKDIR /var/www/html
 
 EXPOSE 9000
 
-# ENTRYPOINT ["/usr/local/bin/setup.sh"]
-CMD ["bash"]
+ENTRYPOINT ["/usr/local/bin/setup.sh"]
