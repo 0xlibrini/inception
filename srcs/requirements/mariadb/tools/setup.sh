@@ -17,4 +17,4 @@ if [ ! -d "/var/lib/mysql/${MYSQL_DATABASE}" ]; then
     mysqladmin -u root -p"${MYSQL_ROOT_PASSWORD}" shutdown
 fi
 
-exec mysqld_safe --datadir=/var/lib/mysql   
+exec mysqld_safe --datadir=/var/lib/mysql
